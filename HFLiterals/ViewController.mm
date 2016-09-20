@@ -26,13 +26,14 @@
     
     [self.view addSubview:anImageView0];
     
-    NSLog(@"\n%@ ,\n\n%@ ,\n\n%@ ,\n\n%@ ,\n\n%@ ,\n\n%@ ,\n\n%@ ,\n\n%@",
+    NSLog(@"\n%@ ,\n\n%@ ,\n\n%@ ,\n\n%@ ,\n\n%@ ,\n\n%@ ,\n\n%@ ,\n\n%@ ,\n\n%@",
           $(null),
           $(xib:View),
           $(font:17.9),
           $(stor:Main),
           $(img:test.jpg),
           $(rgb:#00ff0055),
+          $(url:/folder/path),
           $(url:http:www.baidu.com),
           $(uuid:214C7B4F-7C20-4FD8-8DF8-6CC00D06A21B));
 }
