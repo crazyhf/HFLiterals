@@ -1,2 +1,2 @@
 # HFLiterals
-IOS Literal Extension with Strong Typing 
+IOS Literal Extension with Strong Typing --- Just for Fun .
