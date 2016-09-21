@@ -28,10 +28,12 @@ struct HFSelectType<true, T1, T2> {
 #pragma mark - HFLiteralTraits
 
 /// limit prefix length is 4
-template < char = ' ', char = ' ', char = ' ', char = ' '>
+template < char = ':', char = ':', char = ':', char = ':'>
 struct HFLiteralTraits {
     static const bool MatchLiteral = false;
     typedef id LiteralType;
+    
+    char __error_literal_prefix_invalid__[MatchLiteral?1:-1];
 };
 
 
@@ -85,6 +87,6 @@ template <> struct HFLiteralTraits<'u', 'u', 'i', 'd'> {
 };
 
 
-#define __literal_type__(_lit_) HFLiteralTraits<#_lit_[0], #_lit_[1], #_lit_[2]>::LiteralType
+#define __literal_type__(_lit_) HFLiteralTraits<#_lit_[0], #_lit_[1], #_lit_[2], #_lit_[3]>::LiteralType
 
 #endif /* HFLiteralTraits_h */
